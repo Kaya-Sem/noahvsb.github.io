@@ -23,10 +23,10 @@
         <a href="https://kaya-sem.com/" target="_blank">a fantastic site</a> <b>10/10</b>
         <br>
         <small>- Everyone</small>
-				<br><br>
-				<a href="https://github.com/KiandroDW/Best-Pokemon" target="_blank">great project!</a> <b>10/10</b>
-				<br>
-				<small> - Kiandro</small>
+        <br><br>
+        <a href="https://github.com/KiandroDW/Best-Pokemon" target="_blank">great project!</a> <b>10/10</b>
+        <br>
+        <small> - Kiandro</small>
         <br><br>
         <a href="https://www.marxists.org/reference/archive/mao/selected-works/volume-4/mswv4_22.htm"
             target="_blank">Manifesto of the Chinese
@@ -39,8 +39,31 @@
 
     </p>
 
-    <img src="src/images/thumbs_up.jpg" alt="image" style="width:500px;" title="hey cutie <3" onclick="clicked()">
-		<img src="src/images/ally.jpg" alt="ally" style="width:500px;" title="This cutie <3">
+
+    <img src="src/images/thumbs_up.jpg" alt="image" style="width:500px; transition: transform 0.5s;"
+        title="hey cutie <3" onclick="clicked(this)">
+    <img src="src/images/ally.jpg" alt="ally" style="width:500px; transition: transform 0.5s;" title="This cutie <3"
+        onclick="clicked(this)">
+
+
+
+
+    <img src="src/images/livepeterreaction.gif" alt="image" style="width:500px; transition: transform 0.5s;"
+        title="Live Peter Reaction" onclick="clicked(this)">
+
+    <script>
+        function clicked(img) {
+            img.style.transform = "rotate(360deg)";
+            setTimeout(() => {
+                img.style.transform = "rotate(0deg)";
+            }, 500);
+        }
+    </script>
+
+
+
+    <!-- Noah is the king of codesmells -->
+
 </body>
 
 </html>
