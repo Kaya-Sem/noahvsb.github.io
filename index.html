@@ -58,7 +58,6 @@
 
         title="Live Peter Reaction" onclick="clicked(this)">
 
-    <!-- Explosion Overlay -->
     <div id="explosion-overlay">
         <img src="src/images/cat.gif" alt="BOOM!">
     </div>
@@ -71,12 +70,10 @@
             }, 500);
         }
 
-        // Show explosion overlay after 20 seconds
         window.addEventListener("load", () => {
             setTimeout(() => {
                 const overlay = document.getElementById("explosion-overlay");
                 overlay.style.display = "flex";
-                // Auto-hide after 1.5 seconds
                 setTimeout(() => {
                     overlay.style.display = "none";
                 }, 4500);
